@@ -4,6 +4,6 @@ import { SpotDiagram } from '../src';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <SpotDiagram {...{name: "Spotty"}} />
+    <SpotDiagram {...{ name: 'Spotty' }} />
   </React.StrictMode>,
 );

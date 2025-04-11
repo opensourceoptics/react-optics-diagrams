@@ -17,6 +17,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "eslint": "eslint .",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prettier": "prettier --check .",
+    "prettier-write": "prettier --write .",
     "preview": "vite preview"
   },
   "devDependencies": {
