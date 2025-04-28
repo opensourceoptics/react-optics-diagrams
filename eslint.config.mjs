@@ -17,6 +17,13 @@ export default defineConfig([
     extends: ['js/recommended'],
   },
   tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
+  {
+    ...pluginReact.configs.flat.recommended,
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
   eslintConfigPrettier,
 ]);
