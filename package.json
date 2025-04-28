@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/opensourceoptics/react-optical-diagrams.git"
   },
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "author": "Kyle M. Douglass",
   "type": "commonjs",
   "main": "index.js",
