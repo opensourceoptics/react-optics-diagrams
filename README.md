@@ -1,5 +1,7 @@
 # react-optics-diagrams
 
+![build-test-lint](https://github.com/opensourceoptics/react-optics-diagrams/actions/workflows/build-test-lint.yml/badge.svg)
+
 React components for displaying optical design diagrams.
 
 Currently the following diagrams are provided:
