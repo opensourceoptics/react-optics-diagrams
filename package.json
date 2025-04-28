@@ -1,17 +1,17 @@
 {
-  "name": "react-spot-diagram",
+  "name": "react-optics-diagrams",
   "version": "1.0.0",
-  "description": "A React component for displaying spot diagrams from ray tracing for optical design.",
-  "homepage": "https://github.com/opensourceoptics/react-spot-diagram#readme",
+  "description": "React components for displaying optical design diagrams.",
+  "homepage": "https://github.com/opensourceoptics/react-optical-diagrams#readme",
   "bugs": {
-    "url": "https://github.com/opensourceoptics/react-spot-diagram/issues"
+    "url": "https://github.com/opensourceoptics/react-optical-diagrams/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensourceoptics/react-spot-diagram.git"
+    "url": "git+https://github.com/opensourceoptics/react-optical-diagrams.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Kyle M. Douglass",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
