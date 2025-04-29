@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "check-types": "tsc --noEmit",
     "dev": "vite",
     "build": "vite build",
     "eslint": "eslint .",
@@ -22,8 +23,8 @@
     "prettier": "prettier --check .",
     "prettier-write": "prettier --write .",
     "preview": "vite preview",
-    "test": "vitest --run",
-    "test-watch": "vitest"
+    "test": "vitest && npm run eslint && npm run prettier && npm run check-types",
+    "test-only": "vitest "
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
