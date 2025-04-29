@@ -121,7 +121,7 @@ function calcTickPositions(
     return calcTickPositions(min, max, minTickCount, maxTickCount * 2);
   }
 
-  const ticks = [];
+  const ticks: number[] = [];
   for (let i = 0; i < tickCount; i++) {
     const tickValue = niceMin + i * niceStep;
 

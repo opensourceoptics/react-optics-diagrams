@@ -1,7 +1,7 @@
 /**
  * Options to configure a diagram's layout and appearance.
  */
-interface Options {
+export interface Options {
   /**
    * The fraction of the axisBox linear size that is occupied by padding around the data.
    */
@@ -13,7 +13,7 @@ interface Options {
   viewBoxPadding?: number;
 }
 
-interface SpotDiagramOptions extends Options {
+export interface SpotDiagramOptions extends Options {
   /**
    * The radius of the spot diagram as a percentage of the viewBox size.
    */
@@ -28,7 +28,7 @@ interface SpotDiagramOptions extends Options {
  * The `value` property represents the value of the system specification, while the
  * `unit` property indicates the unit of measurement for that value.
  */
-interface SystemSpec {
+export interface SystemSpec {
   value: number;
   units: string;
 }
@@ -37,7 +37,7 @@ interface SystemSpec {
  * A field specification defines properties of sources used in a ray trace.
  *
  */
-interface FieldSpec extends SystemSpec {
+export interface FieldSpec extends SystemSpec {
   /**
    * The type of field spec.
    */
@@ -54,7 +54,7 @@ interface FieldSpec extends SystemSpec {
  * For example, a ray bundle consisting of one ray and four surfaces would have four
  * intersection points.
  */
-interface RayIntersections {
+export interface RayIntersections {
   x: ReadonlyArray<number>;
   y: ReadonlyArray<number>;
 }
@@ -64,7 +64,7 @@ interface RayIntersections {
  * wavelength and field in an optical system. Ray intersections may also be defined at
  * specific surfaces.
  */
-interface RayTraceResult {
+export interface RayTraceResult {
   readonly wavelengthId: number;
   readonly fieldId: number;
   readonly rayBundle: RayIntersections;
@@ -76,12 +76,12 @@ interface RayTraceResult {
  * An array of ray trace results, each representing the outcome of a ray tracing
  * operation for a specific wavelength and field in an optical system.
  */
-type RayTraceResults = Array<RayTraceResult>;
+export type RayTraceResults = Array<RayTraceResult>;
 
 /**
  * Ticks are used to define the positions of tick marks on an axis.
  */
-interface Ticks {
+export interface Ticks {
   readonly min: number;
   readonly max: number;
 
@@ -96,16 +96,4 @@ interface Ticks {
  * A bounding box is defined by its minimum x and y coordinates, as well as its width
  * and height.
  */
-type BoundingBox = [number, number, number, number];
-
-export {
-  BoundingBox,
-  FieldSpec,
-  Options,
-  RayIntersections,
-  RayTraceResult,
-  RayTraceResults,
-  SpotDiagramOptions,
-  SystemSpec,
-  Ticks,
-};
+export type BoundingBox = [number, number, number, number];
