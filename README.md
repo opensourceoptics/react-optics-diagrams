@@ -1,6 +1,6 @@
 # react-optics-diagrams
 
-![build-test-lint](https://github.com/opensourceoptics/react-optics-diagrams/actions/workflows/build-test-lint.yml/badge.svg)
+![CI Status](https://github.com/cheminfo/react-optics-diagrams/actions/workflows/nodejs-ts.yml/badge.svg)
 
 React components for displaying optical design diagrams.
 
@@ -18,7 +18,7 @@ See the [demo](demo/) folder for examples.
 ### Common Commands
 
 ```console
-# Launch the development server
+# Run the demo on the development server
 npm run dev
 
 # Run tests
