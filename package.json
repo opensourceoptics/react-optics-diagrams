@@ -2,13 +2,13 @@
   "name": "react-optics-diagrams",
   "version": "1.1.0",
   "description": "React components for displaying optical design diagrams.",
-  "homepage": "https://github.com/opensourceoptics/react-optical-diagrams#readme",
+  "homepage": "https://github.com/cheminfo/react-optics-diagrams#readme",
   "bugs": {
-    "url": "https://github.com/opensourceoptics/react-optical-diagrams/issues"
+    "url": "https://github.com/cheminfo/react-optics-diagrams/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensourceoptics/react-optical-diagrams.git"
+    "url": "git+https://github.com/cheminfo/react-optics-diagrams.git"
   },
   "license": "BSD-3-Clause",
   "author": "Kyle M. Douglass",
