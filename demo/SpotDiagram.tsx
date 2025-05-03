@@ -12,7 +12,7 @@ const props = {
   title: 'Spot Diagram',
 };
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
   <React.StrictMode>
     <SpotDiagram {...props} />
   </React.StrictMode>,
