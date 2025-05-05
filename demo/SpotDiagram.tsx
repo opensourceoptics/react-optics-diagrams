@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { styled } from 'styled-components';
 import { SpotDiagram } from '../src';
 import { RayTraceResult } from '../src';
 import data from './demo.json' with { type: 'json' };
 
+// Final surface is ID 3
 const rayTraceResult: RayTraceResult = data[3];
-console.debug('rayTraceResult', rayTraceResult);
+
+const Container = styled.div`
+  margin: auto;
+  max-width: 1200px;
+}`;
 
 const props = {
   rayTraceResult,
@@ -14,6 +20,8 @@ const props = {
 
 ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
   <React.StrictMode>
-    <SpotDiagram {...props} />
+    <Container>
+      <SpotDiagram {...props} />
+    </Container>
   </React.StrictMode>,
 );

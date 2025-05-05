@@ -4,6 +4,10 @@ import Axis from '../Axis';
 import { BoundingBox, RayTraceResult, SpotDiagramOptions } from '../../types';
 import { dataBox, fontSize, padBox, titlePosition } from '../../data/layout';
 
+const SVGContainer = styled.div`
+  max-width: 100%;
+`;
+
 const StyledTitle = styled.text.attrs((props) => ({
   fontSize: props.fontSize ? `${props.fontSize}em` : '0.002em',
   textAnchor: 'middle',
@@ -42,7 +46,7 @@ const SpotDiagram = (props: SpotDiagramProps) => {
   const titleFontSize = fontSize(vBox, options.titleFontFractionalEMSize!);
 
   return (
-    <div>
+    <SVGContainer>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -76,7 +80,7 @@ const SpotDiagram = (props: SpotDiagramProps) => {
           ))}
         </g>
       </svg>
-    </div>
+    </SVGContainer>
   );
 };
 

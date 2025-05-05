@@ -5,7 +5,6 @@ import { RayTraceResults } from '../src';
 import data from './demo.json' with { type: 'json' };
 
 const rayTraceResults: RayTraceResults = data;
-console.debug('rayTraceResults', rayTraceResults);
 
 const props = {
   rayTraceResults,
