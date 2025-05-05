@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
+    exclude: ['**/node_modules/**', '**/lib/**', '**/lib-esm/**'],
   },
 });
