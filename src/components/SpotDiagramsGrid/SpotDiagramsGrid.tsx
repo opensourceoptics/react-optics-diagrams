@@ -18,13 +18,9 @@ import { sortSystemSpecsIndexes } from '../../data/specs';
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr; /* Default to 1 column on mobile */
-  gap: 0.5rem;
+  grid-template-columns: repeat(var(--max-columns), 1fr);
+  align-items: center;
   width: 100%;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(var(--max-columns), 1fr);
-  }
 `;
 
 interface SpotDiagramsGridProps {
