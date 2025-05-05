@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/cheminfo/react-optics-diagrams/compare/v1.1.0...v2.0.0) (2025-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* The grid will no automatically longer switch to a single column on small screens.
+
+### Features
+
+* Responsive design improvements ([4eaf539](https://github.com/cheminfo/react-optics-diagrams/commit/4eaf539bcdacc27573413de78c06006e611f5296))
+
 ## [1.1.0](https://github.com/cheminfo/react-optics-diagrams/compare/v1.0.0...v1.1.0) (2025-04-29)
 
 
