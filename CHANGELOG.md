@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/cheminfo/react-optics-diagrams/compare/v2.0.0...v2.0.1) (2025-05-09)
+
+
+### Bug Fixes
+
+* Fix SpotDiagramsGrid for all screen sizes ([#15](https://github.com/cheminfo/react-optics-diagrams/issues/15)) ([0d537a9](https://github.com/cheminfo/react-optics-diagrams/commit/0d537a9f46519b93bc7185ab942b78284f035320))
+
 ## [2.0.0](https://github.com/cheminfo/react-optics-diagrams/compare/v1.1.0...v2.0.0) (2025-05-05)
 
 
