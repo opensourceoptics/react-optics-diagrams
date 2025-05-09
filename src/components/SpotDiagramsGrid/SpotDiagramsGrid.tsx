@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SpotDiagram from '../SpotDiagram';
+import { SPOT_DIAGRAMS_GRID_CELL_MAX_WIDTH } from '../../constants';
 import {
   FieldSpec,
   RayTraceResult,
@@ -18,9 +19,13 @@ import { sortSystemSpecsIndexes } from '../../data/specs';
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(var(--max-columns), 1fr);
-  align-items: center;
-  width: 100%;
+  grid-template-columns: repeat(
+    var(--max-columns),
+    minmax(0, ${SPOT_DIAGRAMS_GRID_CELL_MAX_WIDTH})
+  );
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 interface SpotDiagramsGridProps {

@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SPOT_DIAGRAMS_GRID_CELL_MAX_WIDTH } from '../../constants';
 import Axis from '../Axis';
 import { BoundingBox, RayTraceResult, SpotDiagramOptions } from '../../types';
 import { dataBox, fontSize, padBox, titlePosition } from '../../data/layout';
 
 const SVGContainer = styled.div`
-  max-width: 100%;
+  max-width: ${SPOT_DIAGRAMS_GRID_CELL_MAX_WIDTH};
 `;
 
 const StyledTitle = styled.text.attrs((props) => ({
@@ -49,7 +50,6 @@ const SpotDiagram = (props: SpotDiagramProps) => {
     <SVGContainer>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="100%"
         viewBox={`${xMin} ${yMin} ${width} ${height}`}
         preserveAspectRatio="xMidYMid meet"
       >
