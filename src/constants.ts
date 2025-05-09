@@ -1,0 +1,1 @@
+export const SPOT_DIAGRAMS_GRID_CELL_MAX_WIDTH = '480px';

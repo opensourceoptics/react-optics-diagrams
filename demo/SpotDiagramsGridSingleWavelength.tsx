@@ -11,12 +11,8 @@ const filteredResults = rayTraceResults.filter(
 
 const props = {
   rayTraceResults: filteredResults,
-  wavelengths: [
-    { value: 0.4861, units: 'µm' },
-  ],
-  fieldSpecs: [
-    { value: 0.0, units: 'deg', type: 'angle' } as const,
-  ],
+  wavelengths: [{ value: 0.4861, units: 'µm' }],
+  fieldSpecs: [{ value: 0.0, units: 'deg', type: 'angle' } as const],
 };
 
 ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
